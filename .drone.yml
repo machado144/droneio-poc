@@ -6,3 +6,4 @@ steps:
    commands:
      - echo $(whoami)
      - echo $(date)
+     - sleep 1
