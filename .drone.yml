@@ -1,4 +1,7 @@
 pipeline:
+platform:
+  os: linux
+  arch: arm64
   build:
     image: golang
     commands:
