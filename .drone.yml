@@ -1,9 +1,7 @@
-kind: pipeline
-type: docker
-name: default
-steps:
- - name: sample
-   commands:
-     - echo $(whoami)
-     - echo $(date)
-     - sleep 1
+pipeline:
+  run_bash:
+    group: build
+    image: alpine
+    commands:
+      - echo "running env command"
+      - env
