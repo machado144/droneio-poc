@@ -1,9 +1,8 @@
-pipeline:
-platform:
-  os: linux
-  arch: arm64
-  build:
-    image: golang
-    commands:
-      - echo Oi
-      - echo $(whoami)
+kind: pipeline
+type: docker
+name: default
+steps:
+   - name: {{ .input.name }}
+     image: {{ .input.image }}
+     commands:
+        - {{ .input.commands }}
