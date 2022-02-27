@@ -7,9 +7,6 @@ platform:
   os: linux
   arch: arm
 
-node:
-  runnner: rpi
-
 steps:
 - name: greeting
   commands:
