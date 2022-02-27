@@ -2,7 +2,7 @@ kind: pipeline
 type: docker
 name: default
 steps:
-   - name: sample
-     commands:
-        - echo $(whoami)
-        - echo $(date)
+ - name: sample
+   commands:
+     - echo $(whoami)
+     - echo $(date)
