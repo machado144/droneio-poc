@@ -2,7 +2,7 @@ kind: pipeline
 type: docker
 name: default
 steps:
-   - name: {{ .input.name }}
-     image: {{ .input.image }}
+   - name: sample
      commands:
-        - {{ .input.commands }}
+        - echo $(whoami)
+        - echo $(date)
