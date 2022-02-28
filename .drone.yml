@@ -1,11 +1,10 @@
 ---
 kind: pipeline
 type: exec
-name: default
-
+name: sumthing
 steps:
-- name: greeting
-  commands:
-  - echo $(whoami)
-  - echo hello world
-  - echo $(date)
+  - name: greeting
+    commands:
+      - echo $(whoami)
+      - echo hello world
+      - echo $(date)
